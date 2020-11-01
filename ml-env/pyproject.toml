@@ -1,6 +1,6 @@
 [tool.poetry]
-name = "data-science-notes"
-version = "0.2.0-dev"
+name = "ml-env"
+version = "0.1.0"
 description = ""
 authors = ["Rafal Skolasinski <r.j.skolasinski@gmail.com>"]
 license = "MIT"
