@@ -29,4 +29,4 @@ serve:
 	poetry run jupyter lab
 
 docker-serve:
-	docker run -it --rm -p 8888:8888 -v ${PWD}:/home/jovyan/work ${LATEST_NAME}
+	docker run --rm -d -p 8888:8888 -v ${PWD}:/home/jovyan/work --name ml-env ${LATEST_NAME}
