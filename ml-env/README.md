@@ -16,7 +16,7 @@ Using image is almost identical as using any of official image for Jupyter's [do
 To run latest image simply:
 ```bash
 docker run --rm -d -p 8888:8888 -v ${PWD}:/home/jovyan/work \
-    --name ml-env ${LATEST_NAME}
+    --name ml-env rafalskolasinski/ml-env:latest
 ```
 
 Check token with:
