@@ -21,12 +21,11 @@ push: image
 	docker push ${REPOSITORY}/${IMAGE_NAME}:${IMAGE_SHA}
 	docker push ${LATEST_NAME}
 
+docker-serve:
+	docker run --rm -d -p 8888:8888 -v ${PWD}:/home/jovyan/work --name ml-env ${LATEST_NAME}
 
 install:
 	poetry install
 
 serve:
 	poetry run jupyter lab
-
-docker-serve:
-	docker run --rm -d -p 8888:8888 -v ${PWD}:/home/jovyan/work --name ml-env ${LATEST_NAME}
