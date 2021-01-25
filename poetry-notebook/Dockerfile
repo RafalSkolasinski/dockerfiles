@@ -20,5 +20,5 @@ ENV PATH "$POETRY_HOME/bin:$PATH"
 
 # Add some handy configuration
 ENV JUPYTER_ENABLE_LAB yes
-COPY extras/shortcuts.jupyterlab-settings \
+COPY --chown=$NB_UID:$NB_GID extras/shortcuts.jupyterlab-settings \
     /home/$NB_USER/.jupyter/lab/user-settings/@jupyterlab/shortcuts-extension/
