@@ -39,7 +39,11 @@ fmt:
 
 
 serve:
-	poetry run echo-server
+	poetry run echo-server --port 5000
 
 docker-serve:
 	docker run -it --rm -p 5000:5000 ${LATEST_NAME}
+
+
+echo:
+	curl -s -H "Content-Type: application/json" -d '{"data": "input"}' http://localhost:5000 | jq .
