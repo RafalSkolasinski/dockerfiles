@@ -44,7 +44,7 @@ pyflakes = "^2.2.0"
 pytest-cov = "^2.10.1"
 pytest-flakes = "^4.0.2"
 line-profiler = "^3.0.2"
-jedi = "^0.17.2"
+jedi = "^0.18.0"
 
 [build-system]
 requires = ["poetry>=0.12"]
