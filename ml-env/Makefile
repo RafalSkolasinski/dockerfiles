@@ -29,3 +29,10 @@ install:
 
 serve:
 	poetry run jupyter lab
+
+train:
+	poetry run python3 examples/train.py
+
+fmt:
+	poetry run black .
+	poetry run nbqa black . --nbqa-mutate
