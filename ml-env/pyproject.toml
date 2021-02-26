@@ -21,7 +21,7 @@ seaborn = "^0.11.0"
 
 deepdish = "^0.3.6"
 pandas = "^1.1.4"
-xarray = "^0.16.1"
+xarray = ">=0.16.1,<0.18.0"
 xyzpy = "^1.0.0"
 
 h5py = "^2.10.0"
