@@ -29,7 +29,7 @@ SQLAlchemy = "^1.3.20"
 
 numba = "^0.51.2"
 numexpr = "^2.7.1"
-nbqa = "^0.5.7"
+nbqa = ">=0.5.7,<0.7.0"
 
 
 [tool.poetry.dev-dependencies]
