@@ -1,0 +1,44 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/ml-env"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: jupyterlab
+    versions:
+    - 3.0.10
+    - 3.0.11
+    - 3.0.12
+    - 3.0.13
+    - 3.0.7
+    - 3.0.8
+    - 3.0.9
+  - dependency-name: nbqa
+    versions:
+    - 0.5.8
+    - 0.5.9
+    - 0.6.0
+  - dependency-name: adaptive
+    versions:
+    - 0.11.3
+  - dependency-name: h5py
+    versions:
+    - 3.1.0
+    - 3.2.0
+  - dependency-name: pandas
+    versions:
+    - 1.2.3
+- package-ecosystem: pip
+  directory: "/echo-server"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: black
+    versions:
+    - 21.4b0
+  - dependency-name: pyflakes
+    versions:
+    - 2.3.0
