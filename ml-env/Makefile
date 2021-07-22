@@ -27,6 +27,9 @@ docker-serve:
 install:
 	poetry install
 
+kernel:
+	poetry run python -m ipykernel install --user --name ml-env
+
 serve:
 	poetry run jupyter lab
 
