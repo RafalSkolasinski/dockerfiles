@@ -33,7 +33,7 @@ nbqa = "^0.5.7"
 
 
 [tool.poetry.dev-dependencies]
-jupyterlab = "^2.2.8"
+jupyterlab = "^3.2.2"
 ipywidgets = "^7.5.1"
 nbdime = "^2.0.0"
 
