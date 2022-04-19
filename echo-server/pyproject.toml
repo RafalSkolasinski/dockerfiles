@@ -12,7 +12,7 @@ echo-server = "server:echo_server"
 [tool.poetry.dependencies]
 python = "^3.8"
 requests = "^2.25.1"
-Flask = "^1.1.2"
+Flask = "^2.0.3"
 click = "^7.1.2"
 
 [tool.poetry.dev-dependencies]
